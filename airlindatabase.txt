@@ -1,0 +1,91 @@
+create database airline;
+
+use airline;
+
+
+create table customer
+(
+customerid varchar(40),
+password varchar(40),
+fname varchar(40),
+lname varchar(40),
+Cnumber char(40),
+EmailID varchar(40),
+address varchar(40),
+primary key(customerid));
+
+insert into  customer values
+(121,1123,"mahesh","kumar",8845832100,"red@gmail.com","gulbarga");
+
+insert into  customer values
+(211,113,"vijay","kumar",9845632100,"as@gmail.com","gulbarga");
+
+
+
+create table airlinedetails
+(
+airlineid varchar(40),
+airlinename varchar(40),
+departure varchar(40),
+destination varchar(40),
+fare varchar(40),
+journeydate date,
+primary key(airlineid));
+
+insert into  airlinedetails values
+(8845,"Airhost","benglore","dubai",50850,"2019-02-09");
+
+insert into  airlinedetails values
+(85,"Airhost","benglore","dubai",50000,"2019-02-09");
+
+
+create table booking
+(bookingid varchar(40),
+airlineid varchar(40),
+departure varchar(40),
+destination varchar(40),
+bookingdate date,
+price varchar(40),
+customerid varchar(40),
+primary key(bookingid));
+
+insert into  booking values
+(95,02,"benglore","dubai","2018-02-09",500,05);
+
+
+insert into  booking values
+(55,22,"benglore","mysore","2019-02-09",500,02);
+
+
+create table offers
+(offersid varchar(40),
+airlineid varchar(40),
+offersname varchar(40),
+offersdetails varchar(40),
+startdate varchar(40),
+enddate varchar(40),
+primary key(airlineid));
+
+
+insert into offers values
+(95,02,"newyearoffer","goa beaches","2018-02-09","2018-02-20");
+
+
+insert into offers values
+(95,02,"newyearoffer","goa beaches","2018-02-09","2018-02-20");
+
+create table cancell1
+(cancellid varchar(40),
+bookingid varchar(40));
+
+
+
+
+
+
+create table admin
+(username varchar(40),
+password varchar(40));
+
+insert into admin values
+("Admin","Admin");

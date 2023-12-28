@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: url(../images/bg_img.jpg) cover no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  width: 100%;
+}
+#slogan {
+  position: absolute;
+  left: 1.2rem;
+  top: 5rem;
+}
+.main {
+  width: 600px;
+}
+h3 {
+  font-size: 20px;
+  text-align: center;
+  color: #00bc84;
+  position: relative;
+  top: -20px;
+}
+
+.login-box {
+  transform: translate(-50%, -50%);
+  color: #000000;
+}
+.card {
+  width: 350px;
+  padding: 40px;
+  height: 380px;
+  border-radius: 20px;
+  background-color: rgba(0, 33, 69, 0.598);
+  position: relative;
+  left: 40rem;
+  top: -3rem;
+}
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 18px 0;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 2px solid #000000;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  margin-left: 10px;
+  font-size: 16px;
+  color: #000000;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.loginout p,
+.loginout a {
+  text-decoration: none;
+  font-size: 29px;
+  position: relative;
+  top: 14rem;
+  left: 8rem;
+  line-height: 2.5rem;
+  color: #7600bc;
+}
+.loginout a {
+  background-color: cornflowerblue;
+  border-radius: 20px;
+  font-size: 22px;
+  padding: 8px 20px;
+  color: rgb(255, 255, 255);
+  position: relative;
+  top: 14.5rem;
+  transition: 0.5s;
+}
+.loginout a:hover {
+  color: darkblue;
+  background-color: lightgreen;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03a9f4;
+  font-size: 12px;
+}
+
+.login-box {
+  display: inline;
+  padding: 5px;
+  text-align: center;
+}
+.btn_sr {
+  display: flex;
+}
+
+.btn_sr .btn {
+  width: 100%;
+  border: 2px solid black;
+  padding: 8px;
+  font-size: 19px;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #000000;
+}
+.btn_sr .btn:hover {
+  transition: 0.5s;
+  background-color: rgb(87, 126, 199);
+}
+.login-box a:hover {
+  color: rgb(0, 136, 255);
+}
